@@ -31,7 +31,7 @@
     closeButton.style.padding = '5px 10px';
     closeButton.style.cursor = 'pointer';
     closeButton.addEventListener('click', function() {
-      container.style.display = 'none';
+      container.style.visibility = 'hidden';
     });
     container.appendChild(closeButton);
     document.body.appendChild(container);
@@ -40,7 +40,7 @@
   function toggleIframeVisibility(event) {
     if (event.key === '\\') {
       if (iframe) {
-        container.style.display = container.style.display === 'none' ? 'block' : 'none';
+        container.style.visibility = container.style.visibility === 'hidden' ? 'visible' : 'hidden';
       } else {
         createIframe();
       }
