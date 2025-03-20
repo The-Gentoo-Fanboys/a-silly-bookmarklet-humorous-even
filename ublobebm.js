@@ -46,5 +46,4 @@ function toggleIframeVisibility(event) {
   }
 }
 
-  document.addEventListener('keydown', toggleIframeVisibility);
-})();
+document.addEventListener('keydown', toggleIframeVisibility);
