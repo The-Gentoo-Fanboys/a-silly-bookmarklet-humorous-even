@@ -10,7 +10,6 @@
     container.style.height = '100vh';
     container.style.zIndex = '2147483647';
 
-    // Create the iframe element
     iframe = document.createElement('iframe');
     iframe.src = 'https://coderva.duckdns.org';
     iframe.style.position = 'absolute';
@@ -32,8 +31,7 @@
     closeButton.style.padding = '5px 10px';
     closeButton.style.cursor = 'pointer';
     closeButton.addEventListener('click', function() {
-      container.remove();
-      iframe = null;
+      container.style.display = 'none';
     });
     container.appendChild(closeButton);
     document.body.appendChild(container);
